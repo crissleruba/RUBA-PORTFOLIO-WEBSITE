@@ -1,0 +1,412 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Cormorant Garamond', serif;
+    background-image: url('webbg.png');
+    background-size: cover;
+    background-position: center;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+p {
+    color: #5B2933; /* Dark Red */
+}
+
+a, .btn {
+    transition: all 300ms ease;
+}
+
+nav, .navsections {
+    display: flex;
+}
+
+/* Add this style to create a visual divider */
+.divider {
+    width: 1px;
+    height: 25px;
+    background-color: #c79fa3; /* Adjust the color to your preference */
+    display: inline-block;
+    margin: 0 10px; /* Adjust the margin as needed */
+}
+
+nav {
+    position: fixed;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%; /* Adjust the width to your preference */
+    justify-content: space-around;
+    align-items: center;
+    height: 15vh; /* Adjust the height to your preference */
+    background-color: #fadde1; /* Light Red */
+    border-radius: 8rem; /* Adjust the border radius to your preference */
+    z-index: 1000; /* Add a z-index to ensure it's above other elements */
+    box-shadow: 0 0 2px rgba(199,159,163);
+}
+
+.navsections {
+    gap: 1.5rem; /* Adjust the gap between items */
+    list-style: none;
+    font-size: 2rem; /* Adjust the font size to your preference */
+}
+
+a {
+    color: #c79fa3; /* Light Red */
+    text-decoration: none;
+    text-decoration-color: white;
+}
+
+a:hover {
+    color: #fadde1; /* Medium Red */
+    text-decoration: underline;
+    text-underline-offset: 0.8rem; /* Adjust the offset */
+    text-decoration-color: #8f3f47; /* Dark Red */
+}
+
+.logo {
+    font-size: 3rem; /* Adjust the font size for the logo */
+    color: #8f3f47;
+    font-family: 'Tangerine', cursive;
+}
+
+.logo:hover {
+    cursor: default;
+}
+
+.welcome {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    color: white; /* Set text color to white */
+    margin-bottom: -150px; /* Adjust the distance from the bottom */
+}
+
+.welcome h1 {
+    font-size: 40px;
+    font-weight: 200;
+    
+    
+}
+
+.explore-now {
+    
+    text-align: center;
+    padding: 20px;
+
+}
+
+.explore-btn {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 1.8rem;
+    color: white;
+    background-color: #fadde1; /* Set button hover background color */
+    padding: 10px 30px;
+    border: none;
+    border-radius: 20px; /* Adjust the corner radius as needed */
+    cursor: pointer;
+    box-shadow: 0 0 3px rgba(199,159,163);
+}
+
+.explore-btn:hover {
+    background-color: #c79fa3; /* Set button hover background color */
+}
+
+.myprofile {
+    position: relative;
+    height: 100vh; /* Set the height as needed */
+}
+
+.section_text {
+    display: none; /* This hides the text content */
+
+}
+
+.title {
+    font-size: 3rem;
+    text-align: center;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+}
+
+.btn-color-1, .btn-color-2 {
+    border: #8f3f47 0.1rem solid; /* Dark Red */
+}
+
+.btn-color-1:hover, .btn-color-2:hover {
+    cursor: pointer; 
+}
+
+.btn-color-1, .btn-color-2:hover {
+    background: #8f3f47; /* Dark Red */
+    color: white;
+}
+
+.btn-color-1:hover {
+    background #5B2933; /* Dark Red */
+}
+
+.btn-color-2 { 
+    background: none;
+}
+
+.btn-color-2:hover { 
+    border: #d78d8a 0.1rem solid; /* Light Red */
+}
+
+.btn-container {
+    gap: 1rem;
+}
+
+.about {
+    padding-top: 120px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    gap: 3rem;
+}
+
+.profile-pic-container img {
+    max-width: 250px; /* Adjust the width as needed */
+    border-radius: 50%;
+    margin-bottom: 1px; /* Reduced the margin */
+    margin-top: -70px;
+}
+
+.text-container {
+    max-width: 500px;
+    text-align: center; /* Centered the text */
+    padding-top: 20px; /* Adjusted the padding */
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.about h1 {
+  font-size: 2.5rem;
+}
+
+.text-container h1 {
+  color: ##c79fa3;
+}
+
+h2 {
+    color: #c79fa3;
+}
+
+p {
+    color: #666;
+    line-height: 1.6;
+}
+
+hr {
+  width: 100%;
+}
+
+.skills {
+    padding: 70px 0;
+    text-align: center;
+    align-items: center;
+}
+
+.skills h1 {
+    color: #c79fa3; /* Dark Red */
+    margin-bottom: 20px;
+    margin-top: -50px;
+    font-size: 3rem;
+    
+}
+
+.skills-container {
+    display: flex;
+    justify-content: center;
+/* Center the content horizontally */
+}
+
+.skills-column {
+    margin-right: 10px; /* Adjust the spacing between columns */
+    padding-right: 10px; /* Adjust the padding to separate columns visually */
+}
+
+.skill-box {
+    padding: 10px;
+    margin-bottom: 5px;
+    border: 1px solid #c79fa3;
+    border-radius: 5px;
+    background-color: #fadde1 ;
+}
+
+.skills-column:last-child {
+    border-right: none; /* Remove the right border from the last column */
+}
+
+
+
+h2 {
+    color: #333;
+}
+.myworks {
+            margin-top: 200px;
+ }
+ 
+.workslogo {
+    margin-top: 230px;
+    background-image: url('workslogo.png'); /* Replace 'background-image.jpg' with your actual image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px; /* Adjust the height as needed */
+    /* Additional styles for the section if necessary */
+}
+.worksmobilep {
+    margin-top: 0px;
+    background-image: url('worksmp.png'); /* Replace 'background-image.jpg' with your actual image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px; /* Adjust the height as needed */
+    /* Additional styles for the section if necessary */
+}
+
+.worksmobilep2 {
+    margin-top: 0px;
+    background-image: url('worksmp2.png'); /* Replace 'background-image.jpg' with your actual image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px; /* Adjust the height as needed */
+    /* Additional styles for the section if necessary */
+}
+.workswebp {
+    margin-top: 0px;
+    background-image: url('workswp.png'); /* Replace 'background-image.jpg' with your actual image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px; /* Adjust the height as needed */
+    /* Additional styles for the section if necessary */
+}
+.workswebp2 {
+    margin-top: 0px;
+    background-image: url('workswp2.png'); /* Replace 'background-image.jpg' with your actual image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px; /* Adjust the height as needed */
+    /* Additional styles for the section if necessary */
+}
+.workssocpub {
+    margin-top: 0px;
+    background-image: url('workssocpub.png'); /* Replace 'background-image.jpg' with your actual image file path */
+    background-size: cover; /* Adjust background size as needed */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent background image from repeating */
+    height: 700px; /* Adjust the height as needed */
+    /* Additional styles for the section if necessary */
+}
+
+.contact {
+
+    padding: 130px 0; /* Adjust the padding as needed */
+
+    text-align: center;
+    margin-top: 120px;
+}
+
+.contact h1 {
+  color: #c79fa3;
+  margin-top: -10px;
+}
+
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    background-color: #c79fa3;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #45a049; /* Add a colon after background-color */
+}
+
+/* Add this style for social media links */
+.social-media {
+    margin-top: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media p {
+    margin-bottom: 10px;
+}
+
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #c79fa3; /* Adjust the color as needed */
+}
+
+.social-media img {
+    width: 20px; /* Adjust the width of the logos */
+    height: 20px; /* Adjust the height of the logos */
+    margin-right: 5px; /* Adjust the spacing between logo and text */
+    border-radius: 5px;
+}
+
+
+.social-media a:hover {
+    color: #c79fa3;
+}
