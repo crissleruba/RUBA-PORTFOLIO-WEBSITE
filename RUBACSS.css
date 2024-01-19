@@ -94,7 +94,7 @@ a:hover {
 .welcome h1 {
     position: absolute; /* Change to absolute positioning */
     bottom: 250px; /* Adjust the distance from the bottom */
-    left: 420px; /* Adjust the distance from the left */
+    left: 500px; /* Adjust the distance from the left */
     font-size: 50px;
     font-weight: 200;
 }
